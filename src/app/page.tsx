@@ -42,7 +42,7 @@ const Page: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="max-w-screen overflow-x-hidden">
       <Header onNavClick={scrollToSection} />
       <div className="flex flex-col w-full">
         <div ref={landingRef} className="min-h-screen w-full">
