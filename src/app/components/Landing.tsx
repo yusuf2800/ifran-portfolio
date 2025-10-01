@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { TypeAnimation } from "react-type-animation";
 
 const Landing = ({ onNavClick }: { onNavClick: (label: string) => void }) => {
-  const [showContent, setShowContent] = useState<boolean>(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowContent(true);
-    }, 1000);
-  }, []);
 
   return (
     <div className="absolute flex min-h-screen min-w-screen flex-col items-center justify-center px-10">
